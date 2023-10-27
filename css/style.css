@@ -1,7 +1,6 @@
 /*---font.scss --*/
 @font-face {
 	font-family: 'Inter-ExtraBold';
-	/* src: url('/fonts/Inter/inter-extrabold.ttf'); */
 	src: url(../fonts/Inter/inter-extrabold.ttf);
 	font-weight: 900;
 	font-style: normal;
@@ -10,7 +9,6 @@
 
 @font-face {
 	font-family: 'Inter-Bold';
-	/* src: url('/fonts/Inter/inter-bold.ttf'); */
 	src: url(../fonts/Inter/inter-bold.ttf);
 	font-style: normal;
 	font-weight: 600;
@@ -18,23 +16,43 @@
 }
   
 @font-face {
+	font-family: 'Inter-SemiBold';
+	src: url(../fonts/Inter/inter-semibold.ttf);
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+}
+  
+@font-face {
 	font-family: 'Inter-Regular';
-	/* src: url('/fonts/Inter/inter-regular.ttf'); */
 	src: url(../fonts/Inter/inter-regular.ttf);
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
 }
-  
 @font-face {
-	font-family: 'SF-PRO-DISPLAY';
-	/* src: url('/fonts/SF-Pro-Display/sfprodisplaybold.otf'); */
-	src: url(../fonts/SF-Pro-Display/sfprodisplaybold.otf);
-	font-style: normal;
-	font-weight: 900;
-	font-display: swap;
- }
-
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.eot);
+    src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.woff2) format('woff2'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.woff) format('woff'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+/* @font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.eot);
+    src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.woff2) format('woff2'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.woff) format('woff'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+} */
+  
 :root{
 	--color-base: #F8E485;
 	--color-green: #2EE600;
@@ -52,34 +70,47 @@ html,
 body {
 	height: 100%;
 	color: var(--color-text);
-	font-family: "Inter", sans-serif;
+	font-family: "Inter-Regular", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 }
+.title-section{
+	font-size: 75px;
+	line-height: 145px;
+	font-family: 'SF Pro Display', sans-serif;
+	text-transform: uppercase;
+}
+.text-section {
+    letter-spacing: 0.5px;
+}
+
 
 img {
 	max-width: 100%;
 }
-
 input:focus,
 select:focus,
 button:focus,
 textarea:focus {
 	outline: none;
 }
-
+a{
+	color: inherit;
+	text-decoration: none;
+}
 a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
 	color: var(--color-text);
 }
-
-ul,
-ol {
+ul, ol {
 	padding: 0;
 	margin: 0;
+}  
+li{
+	list-style: none;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -139,16 +170,7 @@ ol {
 .fa-watsapp{
 	background-image: url(../img/watsapp.svg);
 }
-.title-section{
-	font-size: 75px;
-	line-height: 145px;
-	font-family: 'SF-PRO-DISPLAY', sans-serif;
-	font-weight: 900;
-	text-transform: uppercase;
-}
-.text-section {
-    letter-spacing: 0.5px;
-}
+
 
 
 
@@ -307,6 +329,8 @@ ol {
 	margin-bottom: 50px;
 }
 .feature-section .title-section{
+	font-family: 'Inter-SemiBold';
+	text-transform: none;
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 50px;
@@ -329,6 +353,9 @@ ol {
 	line-height: 24px;
 	color: var(--color-text);
 }
+.feature-section .feature-item .col-md-10 {
+    padding-right: 0;
+}
 .feature-section .feature-item .txt-block{
 	font-size: 14px;
 	line-height: 24px;
@@ -339,6 +366,8 @@ ol {
 .feature-section .feature-item .arrow-block{
 	display: flex;
     align-items: center;
+	padding-left: 0;
+	cursor: pointer;
 }
 .feature-section .feature-item .arrow-block .arrow-btn{
 	color: var(--color-text);
@@ -474,12 +503,16 @@ ol {
 	padding-left: 140px;
 	padding-top: 110px;
 	padding-bottom: 110px;
-	/* padding-right: 0; */
+	overflow: hidden;
+}
+.price-section .container-fluid .items-price{
+	margin-right: -195px;
 }
 .price-section .single-price-plan.active{
 	background: var(--color-border-gradient); 
 }
 .price-section .single-price-plan {
+	width: 100%;
 	max-width: 449px; 
 	background-color: #FCFDCE;
 	color: #000;
@@ -488,6 +521,7 @@ ol {
 	border-radius: 3%;
 }
 .single-price-plan .title-plan{
+	font-family: 'Inter-ExtraBold';
 	font-size: 24px;
 	font-weight: 700;
 	margin-bottom: 20px;
@@ -500,13 +534,14 @@ ol {
 }
 .single-price-plan .price-plan .price{
 	font-size: 48px;
-	font-weight: 900;	
+	font-family: 'Inter-Bold';	
 }
 .single-price-plan .price-plan .month{
 	font-size: 24px;
-	font-weight: 400;
+	font-family: 'Inter-Regular';
 	line-height: 48px;
     margin-left: 5px;
+	text-transform: uppercase;
 }
 .single-price-plan .features-plan{
 	border: 2px solid rgba(0, 0, 0, .2);
@@ -546,7 +581,7 @@ ol {
 	background: var(--color-border-gradient);
 	color: #000;
 	padding-left: 140px;
-	padding-top: 175px;
+	padding-top: 110px;
 	padding-bottom: 40px;
 }
 .form-section .title-section {
@@ -566,23 +601,33 @@ ol {
     background-color: transparent;
 	border: 1px solid rgb(0 0 0 / 24%);
 	padding: 0.45rem 0.75rem;
-	color: #000;
+	color: #000;	
+}
+.form-fields #kontakt {
+	background: url(../img/watsapp-black.svg) no-repeat scroll 12px 7px;
+	padding-left: 42px;
 }
 .form-fields input::placeholder {
 	color: #000;
 	font-size: 16px;
 	font-weight: 500 !important;
 }
+
+.item-field.place input::placeholder {
+	opacity: .6;
+}
+
 .form-fields .item-field{
 	position: relative;
 }
 .form-fields .form-label{
 	font-size: 12px;
+	line-height: 10px;
 	font-weight: 100 !important;
 	background-color: #F8E485;
 	position: absolute;
-	top: -11px;
-	left: 15px;
+	top: -5px;
+	left: 12px;
 	padding: 0 5px;
 }
 .form-fields .primary-btn{
