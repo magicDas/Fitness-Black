@@ -32,12 +32,12 @@
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.eot);
-    src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
-        url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.woff2) format('woff2'),
-        url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.woff) format('woff'),
-        url(../fonts/SF-Pro-Display/SFProDisplay-Heavy.ttf) format('truetype');
+    src: url(../fonts/SF-Pro-Display/SFProDisplay-Black.eot);
+    src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-Black.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-Black.woff2) format('woff2'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-Black.woff) format('woff'),
+        url(../fonts/SF-Pro-Display/SFProDisplay-Black.ttf) format('truetype');
     font-weight: 900;
     font-style: normal;
 }
