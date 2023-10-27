@@ -41,17 +41,7 @@
     font-weight: 900;
     font-style: normal;
 }
-/* @font-face {
-    font-family: 'SF Pro Display';
-    src: url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.eot);
-    src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
-        url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.woff2) format('woff2'),
-        url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.woff) format('woff'),
-        url(../fonts/SF-Pro-Display/SFProDisplay-SFProDisplay-Black.ttf) format('truetype');
-    font-weight: 900;
-    font-style: normal;
-} */
+
   
 :root{
 	--color-base: #F8E485;
@@ -206,28 +196,23 @@ li{
 	padding-right: 10px;
 }
 
-
 .nav-menu .mainmenu {
 	display: inline-block;
 }
-
 .nav-menu .mainmenu ul li {
 	display: inline-block;
 	list-style: none;
 	margin-right: 45px;
 	position: relative;
 }
-
 .nav-menu .mainmenu ul li:last-child {
 	margin-right: 0;
 }
-
 .nav-menu .mainmenu ul li.active a {
 	color: var(--color-base);
 }.nav-menu .mainmenu ul li.active a:after {
 	opacity: 1;
 }
-
 .nav-menu .mainmenu ul li a {
 	color: var(--color-text);
 	font-size: 14px;
@@ -266,7 +251,6 @@ li{
 	align-items: center;
 	margin: 0 50px;
 }
-
 .top-social a {
 	font-size: 26px;
 	color: #ffffff;
@@ -289,16 +273,16 @@ li{
     display: flex;
     align-items: center;
 }
-.hero-section  .hero-content{
+.hero-section .hero-content{
 	position: relative;
 	padding: 0 40px 85px 80px;
 	margin-top: 100px;
 }
-.hero-section  .hero-text{
+.hero-section .hero-text{
 	z-index: 1;
 	position: relative;
 }
-.hero-section  .hero-content .bg{
+.hero-section .hero-content .bg{
 	position: absolute;
 	z-index: 0;
 	left: 0px;
@@ -311,7 +295,7 @@ li{
 	background-color: rgba(0, 0, 0, .15);	
 	backdrop-filter: blur(5px);	
 }
-.hero-section  .text-section{
+.hero-section .text-section{
 	margin-bottom: 55px;
 }
 
@@ -336,7 +320,7 @@ li{
 	line-height: 50px;
 	margin-bottom: 24px;
 }
-.feature-section  .text-section{
+.feature-section .text-section{
 	opacity: .65;
 	letter-spacing: 0.5px;
 	color: #EFEDE8;
@@ -374,6 +358,7 @@ li{
 	font-size: 28px;
 	text-decoration: none;	
     margin-top: 30px;
+	cursor: pointer;
 }
 
 /*--------Video---------*/
@@ -454,7 +439,6 @@ li{
       transform: translateX(-2px);
   }
 }
-
 @keyframes shake {
   0% {
      transform: translateX(0);
@@ -469,7 +453,6 @@ li{
      transform: translateX(-2px);
   }
 }
-
 @-webkit-keyframes pulse {
   0% {
     transform: scale(0);
@@ -482,7 +465,6 @@ li{
     opacity: 0;
   }
 }
-
 @keyframes pulse {
   0% {
     transform: scale(0);
