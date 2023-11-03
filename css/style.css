@@ -214,6 +214,21 @@ li{
 
 
 /*---------- Header ------------*/
+.title-section{
+	font-size: 75px;
+	line-height: 145px;
+	font-family: 'SF Pro Display', sans-serif;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #ffffff;
+    text-shadow: 3px 3px 50px #b0f;
+}
+.text-section {
+    letter-spacing: 0.5px;
+	color: #ffffff;
+    text-shadow: 3px 3px 50px #b0f;
+}
+
 .offcanvas{
 	display: none;
 	position: fixed;
