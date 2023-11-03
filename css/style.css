@@ -722,6 +722,8 @@ li{
     line-height: 75px;
     margin-bottom: 20px;
 	color:#171717;
+	text-shadow: none;
+
 }
 
 .form-section .form-content{
@@ -730,7 +732,7 @@ li{
 }
 .form-section .form-content .text-section {
     letter-spacing: 0.5px;
-    color: #000000;
+    color: #000 !important;
     text-shadow: 3px 3px 50px #b0f;
 }
 
