@@ -223,10 +223,11 @@ li{
 	    color: #000000;
     text-shadow: 7px 4px 22px #fff;
 }
-.text-section {
-    letter-spacing: 0.5px;
-	color: #ffffff;
-    text-shadow: 3px 3px 50px #b0f;
+
+.title-section {
+	letter-spacing: 0.5px;
+	color: #fff;
+    text-shadow: 7px 9px 7px #a0f;
 }
 
 
