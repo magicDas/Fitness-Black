@@ -383,6 +383,12 @@ li{
     display: flex;
     align-items: center;
 }
+
+.form-section .title-section {
+	color:#171717;
+}
+
+
 .hero-section .hero-content{
 	position: relative;
 	padding: 0 40px 85px 80px;
