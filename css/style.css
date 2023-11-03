@@ -220,14 +220,15 @@ li{
 	font-family: 'SF Pro Display', sans-serif;
 	text-transform: uppercase;
 	white-space: nowrap;
-	color: #ffffff;
-    text-shadow: 3px 3px 50px #b0f;
+	    color: #000000;
+    text-shadow: 7px 4px 22px #fff;
 }
 .text-section {
     letter-spacing: 0.5px;
 	color: #ffffff;
     text-shadow: 3px 3px 50px #b0f;
 }
+
 
 .offcanvas{
 	display: none;
