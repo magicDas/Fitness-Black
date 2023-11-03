@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var sideNav = document.querySelector('.sidenav');
     var offCanvas = document.querySelector('.offcanvas');
     var btnPlay = document.querySelector('.btn-play');
+    var sideNavLink = document.querySelector('.sidenav-link');
 
     mobileMenuBtn.addEventListener('click', function () {
         sideNav.classList.toggle('open');
@@ -17,6 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     offCanvas.addEventListener('click', function () {
+        sideNav.classList.toggle('open');
+        offCanvas.classList.toggle('open');
+        document.body.style.overflow = 'auto';
+    });
+
+    sideNavLink.addEventListener('click', function () {
         sideNav.classList.toggle('open');
         offCanvas.classList.toggle('open');
         document.body.style.overflow = 'auto';
