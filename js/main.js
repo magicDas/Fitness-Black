@@ -7,16 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenuBtn.addEventListener('click', function () {
         sideNav.classList.toggle('open');
         offCanvas.classList.toggle('open');
+        document.body.style.overflow = 'hidden';
     });
 
     document.querySelector('.close').addEventListener('click', function () {
         sideNav.classList.toggle('open');
         offCanvas.classList.toggle('open');
+        document.body.style.overflow = 'auto';
     });
 
     offCanvas.addEventListener('click', function () {
         sideNav.classList.toggle('open');
         offCanvas.classList.toggle('open');
+        document.body.style.overflow = 'auto';
     });
 
     btnPlay.addEventListener('click', function () {
