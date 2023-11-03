@@ -73,7 +73,7 @@ html {
 	top: 0;
   }
 body {
-	    background-color: blueviolet;
+	background-color: blueviolet;
 	min-width: 380px;
 }
 /* Works on Firefox */
@@ -114,15 +114,15 @@ body {
 	font-family: 'SF Pro Display', sans-serif;
 	text-transform: uppercase;
 	white-space: nowrap;
-	color: #ffffff;
-    text-shadow: 3px 3px 50px #b0f;
+	/* color: #ffffff;
+    text-shadow: 3px 3px 50px #b0f; */
+	color: #000000;
+    text-shadow: 7px 4px 22px #fff;
 }
 .text-section {
     letter-spacing: 0.5px;
-	color: #ffffff;
     text-shadow: 3px 3px 50px #b0f;
 }
-
 
 
 img {
@@ -214,23 +214,6 @@ li{
 
 
 /*---------- Header ------------*/
-.title-section{
-	font-size: 75px;
-	line-height: 145px;
-	font-family: 'SF Pro Display', sans-serif;
-	text-transform: uppercase;
-	white-space: nowrap;
-	    color: #000000;
-    text-shadow: 7px 4px 22px #fff;
-}
-
-.title-section {
-	letter-spacing: 0.5px;
-	color: #fff;
-    text-shadow: 7px 9px 7px #a0f;
-}
-
-
 .offcanvas{
 	display: none;
 	position: fixed;
@@ -405,12 +388,6 @@ li{
     display: flex;
     align-items: center;
 }
-
-.form-section .title-section {
-	color:#171717;
-}
-
-
 .hero-section .hero-content{
 	position: relative;
 	padding: 0 40px 85px 80px;
@@ -419,13 +396,10 @@ li{
 .hero-section .hero-text{
 	z-index: 1;
 	position: relative;
-	text-shadow: 0px 0px 0px #910aff;
 }
-
 .hero-section .hero-text .text-section{
 	text-shadow: 0px 0px 12px #910aff;
 }
-
 .hero-section .hero-content .bg{
 	position: absolute;
 	z-index: 0;
@@ -441,10 +415,6 @@ li{
 }
 .hero-section .text-section{
 	margin-bottom: 55px;
-}
-
-.hero-section .hero-text .text-section{
-	text-shadow: 0px 0px 12px #910aff;
 }
 
 
@@ -756,6 +726,12 @@ li{
 
 .form-section .form-content{
 	margin-bottom: 45px;
+	
+}
+.form-section .form-content .text-section {
+    letter-spacing: 0.5px;
+    color: #000000;
+    text-shadow: 3px 3px 50px #b0f;
 }
 
 .form-fields form{
@@ -820,10 +796,6 @@ footer.header-section .container-fluid{
 	color: #fff;
     text-shadow: 7px 9px 7px #a0f;
 }
-
-
-
-
 
 @media (min-width: 1120px){
 	.title-section {
