@@ -391,6 +391,7 @@ li{
 .hero-section .hero-text{
 	z-index: 1;
 	position: relative;
+	text-shadow: 0px 0px 0px #910aff;
 }
 .hero-section .hero-content .bg{
 	position: absolute;
