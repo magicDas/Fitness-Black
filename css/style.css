@@ -121,7 +121,7 @@ body {
 }
 .text-section {
     letter-spacing: 0.5px;
-    text-shadow: 3px 3px 50px #b0f;
+    /* text-shadow: 3px 3px 50px #b0f; */
 }
 
 
@@ -306,7 +306,6 @@ li{
 	justify-content: end;
 	align-items: center;
 	width: 100%;
-	/* padding-right: 10px; */
 }
 .header-section .container-fluid .box-control .btn-light{
 	margin-right: 0;
@@ -392,14 +391,15 @@ li{
 	position: relative;
 	padding: 0 40px 85px 80px;
 	margin-top: 100px;
+	width: 80%;
 }
 .hero-section .hero-text{
 	z-index: 1;
 	position: relative;
 }
-.hero-section .hero-text .text-section{
+/* .hero-section .hero-text .text-section{
 	text-shadow: 0px 0px 12px #910aff;
-}
+} */
 .hero-section .hero-content .bg{
 	position: absolute;
 	z-index: 0;
@@ -796,7 +796,8 @@ footer.header-section .container-fluid{
 
 .title-section {
 	color: #fff;
-    text-shadow: 7px 9px 7px #a0f;
+    text-shadow: 1px 1px 10px #898989;
+	letter-spacing: 1px;
 }
 
 @media (min-width: 1120px){
